@@ -15,6 +15,7 @@ public class PlayerTurn {
         System.out.println("\nYour Turn:");
         System.out.println("Choose an action: (1) Attack (2) Defend (3) Heal");
         int choice = scanner.nextInt();
+        player.setDefending(false);
         if (choice == 1) {
             Action action = new AttackAction();
             action.execute(player, enemy);

@@ -6,7 +6,7 @@ public class AggressiveStrategy implements Strategy {
     @Override
     public void execute(Player player, Enemy enemy) {
         int damage = random.nextInt(5) + 2; // More aggressive attack
-        player.reduceHealth(damage);
+        player.takeDamage(damage);
         System.out.println("The Goblin strikes aggressively for " + damage + " damage!");
     }
 }
